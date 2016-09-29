@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">	
+    
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:padding="10dp"
+	    android:orientation="vertical"
+	    android:background="#202020" >
+	    
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="TOPIC"       
+	        android:textSize="20sp"
+	        android:textColor="#939376"/>
+	    
+	    <EditText 
+	        android:id="@+id/etTopic"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:minHeight="50dp"
+	        android:background="@drawable/shape_textview"
+	        android:hint="Enter Topic"
+	        android:inputType="textMultiLine"
+	        android:singleLine="false"
+	        android:lines="3"
+	        android:padding="5dp"
+	        android:gravity="left|center_vertical"
+	        android:layout_marginTop="5dp"
+	        android:nextFocusDown="@+id/rtChoice1"/>  
+	        
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="CHOICES"       
+	        android:textSize="20sp"
+	        android:layout_marginTop="20dp"
+	        android:textColor="#939376"/>  
+	        
+	    <EditText 
+	        android:id="@+id/etChoice1"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="@drawable/shape_textview"
+	        android:hint="Choice 1"
+	        android:inputType="text"
+	        android:padding="5dp"
+	        android:gravity="left|center_vertical"
+	        android:layout_marginTop="5dp"/>  
+	    <EditText 
+	        android:id="@+id/etChoice2"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="@drawable/shape_textview"
+	        android:hint="Choice 2"
+	        android:inputType="text"
+	        android:padding="5dp"
+	        android:gravity="left|center_vertical"
+	        android:layout_marginTop="5dp"/>  
+	        
+	    <EditText 
+	        android:id="@+id/etChoice3"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="@drawable/shape_textview"
+	        android:hint="Choice 3"
+	        android:inputType="text"
+	        android:padding="5dp"
+	        android:gravity="left|center_vertical"
+	        android:layout_marginTop="5dp"/> 
+	        
+	    <EditText 
+	        android:id="@+id/etChoice4"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="@drawable/shape_textview"
+	        android:hint="Choice 4"
+	        android:inputType="text"
+	        android:padding="5dp"
+	        android:gravity="left|center_vertical"
+	        android:layout_marginTop="5dp"/> 
+	        
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="TIMER"       
+	        android:textSize="20sp"
+	        android:layout_marginTop="20dp"
+	        android:textColor="#939376"/>      
+		<Spinner
+		    android:id="@+id/timer"
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:layout_marginTop="5dp"
+		    android:background="@drawable/shape_textview" /> 
+		    
+	    <Button 
+	        android:id="@+id/btnInvite"
+	        android:layout_width="match_parent"
+	        android:layout_marginTop="10dp"
+	        android:layout_height="40dp"
+	        android:text="Invite to vote"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"        
+	        android:padding="5dp"
+	        android:textColor="#fff"
+	        android:textStyle="bold"
+	        android:textSize="18sp"
+	        android:background="@drawable/shape_result"
+	        android:layout_gravity="center_horizontal|center_vertical"/> 	
+	        
+	    <Button 
+	        android:id="@+id/btnSend"
+	        android:layout_width="match_parent"
+	        android:layout_marginTop="30dp"
+	        android:layout_height="60dp"
+	        android:text="SEND"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"        
+	        android:padding="5dp"
+	        android:textColor="#fff"
+	        android:textStyle="bold"
+	        android:textSize="22sp"
+	        android:background="@drawable/shape_create"
+	        android:layout_gravity="center_horizontal|center_vertical"/> 	    	
+	
+	</LinearLayout>
+</ScrollView>

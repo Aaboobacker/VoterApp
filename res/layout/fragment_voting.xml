@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:background="#202020">
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" 	    
+	    android:background="#202020">
+	    
+		<LinearLayout
+	         android:layout_width="fill_parent"
+	         android:layout_height="60dp"
+	         android:background="#1D1E20"
+	         android:gravity="top" >
+	         <com.google.android.gms.ads.AdView
+	             xmlns:ads="http://schemas.android.com/apk/res-auto"
+	             android:id="@+id/adview"
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content" 
+	             ads:adSize="BANNER"
+	             ads:adUnitId="ca-app-pub-6883922783644150/3299907547"                          
+	             android:layout_gravity="top|center_vertical"/>          
+	     </LinearLayout>     
+	    
+	   <TextView 
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:text="TOPIC"       
+	       android:textSize="20sp"
+	       android:layout_marginTop="20dp"
+	       android:textColor="#FF9900"
+	       android:layout_marginLeft="10dp" 
+	       android:layout_marginRight="10dp"/>  
+	          
+	    <TextView
+	        android:id="@+id/tvTopic"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:singleLine="false"
+	        android:textSize="22sp"
+	        android:textColor="#fff"
+	        android:layout_marginLeft="10dp" 
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"/>
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@android:color/darker_gray"
+	        android:layout_marginLeft="10dp" 
+	        android:layout_marginRight="10dp"        
+	        android:layout_marginTop="5dp"/>
+	    
+	    <RadioGroup
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:checkedButton="@+id/lunch"
+	        android:layout_marginTop="20dp"        
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:background="@drawable/shape_textview"
+	        android:gravity="left"
+	        android:id="@+id/rgOptions">
+	        <RadioButton
+	            android:text="Option1"            
+	            android:id="@+id/rb1"/>
+	        <RadioButton
+	            android:text="Option2"            
+	            android:id="@+id/rb2" />
+	        <RadioButton
+	            android:text="Option3"            
+	            android:id="@+id/rb3" />
+	        <RadioButton
+	            android:text="Option4"            
+	            android:id="@+id/rb4" />
+	    </RadioGroup>
+	      
+	    <TextView
+	        android:id="@+id/tvRemain"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:textSize="22sp"
+	        android:textColor="#fff"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"          
+	        android:background="@drawable/shape_create"/>
+	      
+	    <Button 
+	        android:id="@+id/btnSubmit"
+	        android:layout_width="match_parent"
+	        android:layout_marginTop="30dp"
+	        android:layout_height="60dp"
+	        android:text="Submit"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"    
+	        android:layout_marginBottom="20dp"    
+	        android:padding="5dp"
+	        android:textColor="#fff"
+	        android:textStyle="bold"
+	        android:textSize="22sp"
+	        android:background="@drawable/shape_result"
+	        android:layout_gravity="center_horizontal|center_vertical"/>
+	
+	</LinearLayout>
+</ScrollView>

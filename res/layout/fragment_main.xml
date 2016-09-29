@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:background="#202020" >
+    
+    <Button 
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp"
+        android:text="Create Vote"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"        
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:background="@drawable/shape_create"
+        android:layout_gravity="center_horizontal|center_vertical"/>
+    <Button 
+        android:id="@+id/btnPending"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="60dp"
+        android:text="Pending Votes"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"        
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:background="@drawable/shape_pending"
+        android:layout_gravity="center_horizontal|center_vertical"/>   
+        
+    <Button 
+        android:id="@+id/btnResult"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="60dp"
+        android:text="Voting Results"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"        
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:background="@drawable/shape_result"
+        android:layout_gravity="center_horizontal|center_vertical"/>       
+
+</LinearLayout>
